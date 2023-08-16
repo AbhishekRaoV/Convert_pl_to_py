@@ -11,5 +11,6 @@ module "ec2-instance" {
   associate_public_ip_address = false
   tags={
     Name="VM - ${count.index}"
+    owner="Abi"
   }
 }
