@@ -1,0 +1,90 @@
+Target stl2bin built by tcs.user
+Host "bazel-poc" running LINUX
+Reference Time 2022-12-11T15:23:21, this audit started 2022-12-11T15:23:39
+View was bazel-poc:/usr/tcs/views/test_veiw.vws
+Initial working directory was /vobs/testvob/libstlio
+----------------------------
+MVFS objects:
+----------------------------
+/vobs/testvob/libstlio/src/tools/st2bin.c@@/main/1 <2022-06-17T23:55:22>
+/vobs/testvob/libstlio/bin/libstlio.a@@2022-12-10T16:45.1893
+/vobs/testvob/libstlio/include/stlio.h@@/main/1 <2022-12-11T15:23:04>
+/vobs/testvob/libstlio/include/serdeshelper.h@@/main/1 <2022-09-08T10:06:04>
+----------------------------
+Variables and Options:
+----------------------------
+CC=/usr/bin/clang
+CFLAGS=-Wall -pedantic -ansi -std=c99 -lm -L../makebin/ -I../include/
+RM=rm -f
+SRC=..
+----------------------------
+Build Script:
+----------------------------
+rm -f bin/stl2bin ; /usr/bin/clang -Wall -pedantic -ansi -std=c99 -lm  -o ../makebin/tools/stl2bin -L../makebin/ -I../include/ stl2bin.c ../makebin/libstlio.a
+----------------------------
+Target libstlio.a built by tcs.user
+Host "bazel-poc" running LINUX
+Reference Time 2022-12-11T15:23:21, this audit started 2022-12-11T15:23:39
+View was bazel-poc:/usr/tcs/views/test_veiw.vws
+Initial working directory was /vobs/testvob/libstlio
+----------------------------
+MVFS objects:
+----------------------------
+/vobs/testvob/libstlio/obj/stlio.o@@2022-12-10T16:45.1893
+/vobs/testvob/libstlio/obj/stlioStringErrors.o@@2022-12-10T16:45.1893
+----------------------------
+Variables and Options:
+----------------------------
+ARCMD=ar
+RM=rm -f
+----------------------------
+Build Script:
+----------------------------
+rm -f bin/libstlio.a ; ar rcs bin/libstlio.a obj/stlio.o obj/stlioErrorStrings.o
+----------------------------
+Target stlio.o built by tcs.user
+Host "bazel-poc" running LINUX
+Reference Time 2022-12-11T15:23:21, this audit started 2022-12-11T15:23:39
+View was bazel-poc:/usr/tcs/views/test_veiw.vws
+Initial working directory was /vobs/testvob/libstlio
+----------------------------
+MVFS objects:
+----------------------------
+/vobs/testvob/libstlio/src/stlio.c@@/main/1 <2022-06-17T23:55:22>
+/vobs/testvob/libstlio/include/stlio.h@@/main/1 <2022-12-11T15:23:04>
+/vobs/testvob/libstlio/include/serdeshelper.h@@/main/1 <2022-09-08T10:06:04>
+----------------------------
+Variables and Options:
+----------------------------
+CC=/usr/bin/clang
+CFLAGS=-Wall -fPIC -pedantic -ansi -std=c99 -lm -DSTLIO_VERTEX_NORMAL_VALIDATION_ENABLED -DSTLIO_ERROR_STRINGS_ENABLED -DSTLIO_VALIDATION_SOLIDNAME_MATCH_ENABLED -I../include -c
+RM=rm -f
+SRC=..
+----------------------------
+Build Script:
+----------------------------
+rm -f ../obj/stlio.o ; /usr/bin/clang -Wall -fPIC -pedantic -ansi -std=c99 -lm -DSTLIO_VERTEX_NORMAL_VALIDATION_ENABLED -DSTLIO_ERROR_STRINGS_ENABLED -DSTLIO_VALIDATION_SOLIDNAME_MATCH_ENABLED -I../include -c -o obj/stlio.o src/stlio.c
+----------------------------
+Target stlioErrorStrings.o built by tcs.user
+Host "bazel-poc" running LINUX
+Reference Time 2022-12-11T15:23:21, this audit started 2022-12-11T15:23:39
+View was bazel-poc:/usr/tcs/views/test_veiw.vws
+Initial working directory was /vobs/testvob/libstlio
+----------------------------
+MVFS objects:
+----------------------------
+/vobs/testvob/libstlio/src/stlioErrorStrings.c@@/main/1 <2022-06-17T23:55:22>
+/vobs/testvob/libstlio/include/stlio.h@@/main/1 <2022-12-11T15:23:04>
+/vobs/testvob/libstlio/include/serdeshelper.h@@/main/1 <2022-09-08T10:06:04>
+----------------------------
+Variables and Options:
+----------------------------
+CC=/usr/bin/clang
+CFLAGS=-Wall -fPIC -pedantic -ansi -std=c99 -lm -DSTLIO_VERTEX_NORMAL_VALIDATION_ENABLED -DSTLIO_ERROR_STRINGS_ENABLED -DSTLIO_VALIDATION_SOLIDNAME_MATCH_ENABLED -I../include -c
+RM=rm -f
+SRC=..
+----------------------------
+Build Script:
+----------------------------
+rm -f ../obj/stlioErrorStrings.o ; /usr/bin/clang -Wall -fPIC -pedantic -ansi -std=c99 -lm -DSTLIO_VERTEX_NORMAL_VALIDATION_ENABLED -DSTLIO_ERROR_STRINGS_ENABLED -DSTLIO_VALIDATION_SOLIDNAME_MATCH_ENABLED -I../include -c -o obj/stlioErrorStrings.o src/stlioErrorStrings.c
+----------------------------
